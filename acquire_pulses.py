@@ -29,7 +29,7 @@ if __name__=="__main__":
     #print fname
 
     # No. Events
-    no_events = 10001
+    no_events = 10000
 
     # TELLIE settings
     channel = 8
@@ -75,7 +75,7 @@ if __name__=="__main__":
     time.sleep(0.1)
     loop_time = time.time()
     for i in range(no_events):
-        if i==0: # Often first pulse doesn't fire correctly
+        if i==0: # Often first pulse doesn't fire correctly, so fire a couple of extras
             tek_scope.acquire(True) # Wait for triggered acquisition
             sc.fire()
             time.sleep(0.1)
