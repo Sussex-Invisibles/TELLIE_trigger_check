@@ -9,8 +9,6 @@
 # Author: Ed Leming
 # Date: 17/03/2015
 ################################################
-import pickle
-import utils
 import time
 import sys
 import calc_utils as calc
